@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/registro.css">
+    <link rel="icon" type="image/png" href="img/star.png" />
+    <title>Registrate</title>
+</head>
+<body>
+  
+    <form action="usuario-add.php" method="post" style="margin-left: 200px; margin-top: 30px;">
+        
+        <div id="form_wrapper">
+            <div id="form_left">
+                <img src="img/user.png" alt="computer icon">
+            </div>
+            <div id="form_right">
+                <h1>REGÍSTRATE</h1>
+                <div class="input_container">
+                    <i class="fas fa-envelope"></i>
+                    <input placeholder="Nombre" type="text"  id="field_email" class='input_field' require name="usuario">
+                </div>
+                <div class="input_container">
+                    <i class="fas fa-lock"></i>
+                    <input  placeholder="Contraseña" type="password"  id="field_password" class='input_field' require name="pass">
+                </div>
+                <div class="input_container">
+                    <i class="fas fa-lock"></i>
+                    <input  placeholder="Correo" type="email"  id="field_password" class='input_field' require name="correo">
+                </div>
+                <input type="submit" value="Agregar" id='input_submit' class='input_field' >
+                <span id='create_account'>
+                    <a href="index.html"> &#11013; Regresar </a>
+                </span>
+            </div>
+            
+        </div>
+        
+    </form>
+    
+</body>
+</html>
