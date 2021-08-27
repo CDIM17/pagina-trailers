@@ -11,7 +11,7 @@ if(!empty($_POST['nombre']) && !empty($_POST['genero']) && !empty($_POST['descri
     $destino= "img/".$imagen;
     $trailer_link = $_POST['trailer'];
     $trailer= "https://www.youtube.com/watch?v=".$trailer_link;
-    $query = mysqli_query($mysqli," insert into peliculas (nombre,genero,descripcion,link_pelicula,imagen,trailer) values('$nombre','$generos','$descripcion','$destino','$imagen','$trailer')");
+    $query = mysqli_query($mysqli," insert into peliculas (nombre,genero,descripcion,link_pelicula,imagen,trailer) values('$nombre','$generos','$descripcion','$destino','$imagen','$trailer_link')");
 
     if ($query) {
         header('location:peliculas-crud.php');
